@@ -1,4 +1,5 @@
-@mkdir build-x86 >nul
-pushd build-x86 >nul
-cmake -G "Visual Studio 12" ..\Nettitude
+@mkdir build-win32 >nul
+pushd build-win32 >nul
+cmake -G "Visual Studio 14" ..\Nettitude
+cmake --build . --config Release
 popd >nul
